@@ -12,7 +12,7 @@ class Solution {
 public:
 int length(ListNode* head)
 {
-    int cnt=0;
+    int cnt = 0;
     while(head && ++cnt)
     {
         head=head->next;
@@ -23,7 +23,7 @@ int length(ListNode* head)
         if(length(head)<2)
         return head;
         ListNode *curr=head,*prev=NULL,*frwd=NULL;
-        for(int i=0;i<2;i++)
+        for(int i=0 ; i<2 ; i++)
         {
             frwd=curr->next;
             curr->next=prev;
